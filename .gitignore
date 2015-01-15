@@ -1,0 +1,6 @@
+.vagrant
+node_modules
+.idea
+.cache
+bower_components
+
