@@ -1,13 +1,17 @@
 var readline = require('readline');
 var forth = require('./lib/jsforth');
+var emoji = require('emoji');
+
 forth.init();
 forth.setPrint(console.log);
 
 process.stdin.setEncoding('utf8');
 process.stdout.setEncoding('utf8');
 
-var rl = readline.createInterface(process.stdin, process.stdout);
-
+var emojiToKeyword = {
+  'heavy-plus-sign': '+',
+  'face-throwing-a-kiss': '.'
+};
 
 function getSymbols(string) {
   var length = string.length;
@@ -29,15 +33,34 @@ function getSymbols(string) {
   return output;
 }
 
+function emojiToForth(str) {
+  return str.replace(emoji.EMOJI_RE(), function (_, m) {
+    var em = emoji.EMOJI_MAP[m];
+    var name = em[1].replace(/\s+/g, '-');
+    var ret = '<unknown>';
+    if (name in emojiToKeyword) {
+      console.log(name + 'in!');
+      ret = emojiToKeyword[name];
+    } else {
+      ret = 'emoji-' + name;
+    }
+    return ' ' + ret + ' ';
+  });
+}
+
+var rl = readline.createInterface(process.stdin, process.stdout);
+
 
 rl.setPrompt('> ');
 rl.prompt();
 
 rl.on('line', function(line) {
   line = line.trim();
-  //var symbols = getSymbols(line);
-  //console.log(symbols.join(' '));
-  forth.run(line);
+  var symbols = getSymbols(line);
+  console.log(symbols.join(' '));
+  var forthLine = emojiToForth(line);
+  console.log('forth: ' + forthLine);
+  forth.run(forthLine);
   console.log(forth.stacktop(5));
   rl.prompt();
 }).on('close', function() {
