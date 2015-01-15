@@ -10,7 +10,14 @@ process.stdout.setEncoding('utf8');
 
 var emojiToKeyword = {
   'heavy-plus-sign': '+',
-  'face-throwing-a-kiss': '.'
+  'face-throwing-a-kiss': '.',
+  'high-voltage-sign': ':',
+  'heart-with-arrow': 'rot',
+  'face-with-stuck-out-tongue-and-winking-eye': '?do',
+  'couple-with-heart': 'over',
+  'revolving-hearts': 'swap',
+  'cyclone': 'loop',
+  'broken-heart': 'drop'
 };
 
 function getSymbols(string) {
@@ -34,18 +41,19 @@ function getSymbols(string) {
 }
 
 function emojiToForth(str) {
-  return str.replace(emoji.EMOJI_RE(), function (_, m) {
+  var emojified = str.replace(emoji.EMOJI_RE(), function (_, m) {
     var em = emoji.EMOJI_MAP[m];
     var name = em[1].replace(/\s+/g, '-');
     var ret = '<unknown>';
     if (name in emojiToKeyword) {
-      console.log(name + 'in!');
+      //console.log(name + 'in!');
       ret = emojiToKeyword[name];
     } else {
       ret = 'emoji-' + name;
     }
     return ' ' + ret + ' ';
   });
+  return emojified.replace(/\s+/g, ' ');
 }
 
 var rl = readline.createInterface(process.stdin, process.stdout);
@@ -57,9 +65,9 @@ rl.prompt();
 rl.on('line', function(line) {
   line = line.trim();
   var symbols = getSymbols(line);
-  console.log(symbols.join(' '));
+  console.log('>> ' + symbols.join(' ').replace(/\s+/g, ' '));
   var forthLine = emojiToForth(line);
-  console.log('forth: ' + forthLine);
+  console.log('>> ' + forthLine);
   forth.run(forthLine);
   console.log(forth.stacktop(5));
   rl.prompt();
