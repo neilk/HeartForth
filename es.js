@@ -1,7 +1,7 @@
 var readline = require('readline');
 var forth = require('./lib/jsforth');
 forth.init();
-forth._print = console.log;
+forth.setPrint(console.log);
 
 process.stdin.setEncoding('utf8');
 process.stdout.setEncoding('utf8');
@@ -37,7 +37,8 @@ rl.on('line', function(line) {
   line = line.trim();
   //var symbols = getSymbols(line);
   //console.log(symbols.join(' '));
-  forth._run(line);
+  forth.run(line);
+  console.log(forth.stacktop(5));
   rl.prompt();
 }).on('close', function() {
   console.log('Have a great day!');
