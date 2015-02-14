@@ -1,0 +1,25 @@
+{
+  "name": "HeartForth",
+  "description": "An emoji dialect of Forth",
+  "version": "0.0.1",
+  "author": {
+    "name": "Neil Kandalgaonkar",
+    "email": "neilk@neilk.net",
+    "url": "http://neilk.net/"
+  },
+  "license": {
+    "type": "GPL2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/neilk/heartforth.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.x"
+  },
+  "dependencies": {
+    "emoji": "git://github.com/neilk/emoji.git#master",
+    "prompt": "*"
+  }
+}
