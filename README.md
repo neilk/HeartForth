@@ -56,7 +56,7 @@ so these are matched together. So far I have implemented the basics:
 
 My friend Ian Baker [wondered](https://twitter.com/raindrift/status/547536961171226625) whether anyone had yet made an all-Emoji programming language.
 My [first thought](https://twitter.com/flipzagging/status/547815119473086465) was to do a Lisp, but I was disappointed in how much the parentheses 
-🌘 🌒" dominated the visual look. What we needed was a language which was more stream-of-consciousness, like the way people use Emoji already. 
+🌘 🌒 dominated the visual look. What we needed was a language which was more stream-of-consciousness, like the way people use Emoji already. 
 
 A long time ago I had used another stack-based language, PostScript, and they have this curious property of being streams of keywords with some data
 mixed in. Just like a block of Emoji. Once I realized I could match hearts to stack operators I knew I was onto something. I originally tried implementing
