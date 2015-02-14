@@ -32,8 +32,7 @@ HeartForth is a dialect of
 [stack-oriented](https://en.wikipedia.org/wiki/Stack-oriented_programming_language)
 language. Where other programming languages use many data structures,
 Forth has a wealth of operators to manipulate the stack. Emoji 
-has a large number of symbols which incorporate hearts, which suggest holding
-something close, or remembering something. So....
+has a large number of symbols which incorporate hearts. So....
 
 | HeartForth | Standard Forth | meaning |
 | --- | --- | --- |
@@ -70,8 +69,11 @@ A long time ago I had used another stack-based language,
 [PostScript](https://en.wikipedia.org/wiki/PostScript). They have
 this curious property of being streams of keywords with some data
 mixed in. Just like a block of Emoji. Once I realized I could match
-hearts to stack operators I knew I was onto something. I originally
-tried implementing a new stack language in pure JavaScript, which was
+hearts to stack operators I knew I was onto something. The "revolving hearts" 
+symbol practically suggests `swap`, and hearts have something to do with
+holding something close or remembering it. 
+
+I originally tried implementing a new stack language in pure JavaScript, which was
 surprisingly easy to get started but surprisingly hard to do things like
 recursion well. So I decided to simply source-translate to an existing
 Forth implementation instead.
