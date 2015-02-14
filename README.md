@@ -21,7 +21,9 @@ An Emoji-based stack language
 
 5💥0😘  
 
+```
 >> 120
+```
 
 ## Discussion
 
