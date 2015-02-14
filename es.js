@@ -38,9 +38,11 @@ rl.on('line', function(line) {
   line = line.trim();
   var symbols = getSymbols(line);
   console.log('>> ' + symbols.join(' ').replace(/\s+/g, ' '));
-  var forthLine = e2f.emojiToForth(line);
-  //console.log('>> ' + forthLine);
-  forth.run(forthLine);
+  var forthLines = e2f.emojiToForth(line);
+  forthLines.forEach(function(line) {
+    console.log('forth>> ' + line);
+    forth.run(line);
+  });
   //var stack = forth.stacktop(10);
   //console.log(stack.slice(5,5));
   rl.prompt();

@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "emoji": "git://github.com/neilk/emoji.git#master",
-    "prompt": "*"
+    "lazy": "*",
+    "prompt": "*",
+    "word-wrap": "*"
   }
 }
