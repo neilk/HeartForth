@@ -27,7 +27,7 @@ An Emoji-based stack language
 
 ## Discussion
 
-HeartForth is a dialect of Forth, a stack-based language. Where other programming languages use many data structures, 
+HeartForth is a dialect of [Forth](https://en.wikipedia.org/wiki/Forth_%28programming_language%29), a stack-based language. Where other programming languages use many data structures, 
 Forth has a wealth of operators to manipulate the stack. Emoji also has a large number of symbols which incorporate hearts, 
 so these are matched together. So far I have implemented the basics:
 
@@ -52,8 +52,15 @@ so these are matched together. So far I have implemented the basics:
 
 * None.
 
-## Why? Why would you do this?
+## Why would you do this?
 
+My friend Ian Baker [wondered](https://twitter.com/raindrift/status/547536961171226625) whether anyone had yet made an all-Emoji programming language.
+My [first thought](https://twitter.com/flipzagging/status/547815119473086465) was to do a Lisp, but I was disappointed in how much the parentheses 
+🌘 🌒" dominated the visual look. What we needed was a language which was more stream-of-consciousness, like the way people use Emoji already. 
+
+A long time ago I had used another stack-based language, PostScript, and they have this curious property of being streams of keywords with some data
+mixed in. Just like a block of Emoji. Once I realized I could match hearts to stack operators I knew I was onto something. I originally tried implementing
+a new stack language in pure JavaScript, but recursion was hard, so I decided to base it on a Forth implementation instead.
 
 ## Complete glossary
 
@@ -83,10 +90,14 @@ so these are matched together. So far I have implemented the basics:
 | 👏   | then | *then* |
 
 
+## Thanks to
 
-## Acknowledgements
+Aadit M. Shah posted [this answer](https://stackoverflow.com/questions/13466600/how-would-i-go-about-implementing-a-simple-stack-based-programming-language)
+on Stack Exchange, which helped me get started.
 
-Aadit M. Shah posted this answer on Stack Exchange, which helped me get started.
+The [repl.it](https://github.com/replit) project and [ForthFreak](http://forthfreak.net/jsforth80x25.html) for bringing Forth to JavaScript.
 
-https://stackoverflow.com/questions/13466600/how-would-i-go-about-implementing-a-simple-stack-based-programming-language
+## Dedication
+
+*For my lovely girlfriend Melanie. I heart you 100 factorial*
 
