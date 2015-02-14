@@ -74,22 +74,13 @@ Forth implementation instead.
 
 ## Show me another hackeneyed programming example.
 
-What new language would be complete without printing the *n*th Fibonacci
-number?
+What new language would be complete without printing the first *n* Fibonacci
+numbers?
 
-> 😀🌿0 1💘0✋💑➕💞👌💔😉
+> 😀🌿0 1💘0✋💑➕💞💕😘👌💔😉
 > 
-> 6🌿 😘 
-> 
-> `>> 8`
-> 
-> 7🌿 😘 
-> 
-> `>> 13`
-> 
-> 8🌿 😘 
-> 
-> `>> 21`
+> 10🌿 
+> `>> 0 1 1 2 3 5 8 13 21 34`
 
 
 ## Complete glossary
