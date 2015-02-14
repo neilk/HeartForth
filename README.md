@@ -15,13 +15,22 @@ An Emoji-based stack language
 >> 120 
 ```
 
-*In HeartForth...*
+*In HeartForth, factorial would be...*
 
 > 😀💥0💞👉💕1➖💕1🙏👍👉✖💑0🙏👍💞💔😉
 >
 > 5💥😘  
 > 
 > `>> 120`
+
+*And Fibonacci...*
+
+> 😀🌿0 1💘0✋💑➕💞💕😘👌💔😉
+> 
+> 10🌿 
+>
+> `>> 0 1 1 2 3 5 8 13 21 34`
+
 
 ## Discussion
 
@@ -44,16 +53,16 @@ has a large number of symbols which incorporate hearts. So....
 
 ## Advantages
 
-* Extremely compact. Many complex programs fit in a tweet.
-* Clean visual separation between program and data. No need to syntax-highlight.
+* Extremely compact.
+* Clean visual separation between program and data.
 * Whitespace agnostic. 
-* Fully internationalized. Most programming languages are biased towards English speakers. Not HeartForth!
+* Fully internationalized; no bias for English speakers.
 
 ## Disadvantages
 
 * None.
 
-## Why would you do this?
+## Motivation
 
 My friend Ian Baker [wondered](https://twitter.com/raindrift/status/547536961171226625) whether
 anyone had yet made an all-Emoji programming language.  My [first
@@ -75,18 +84,6 @@ I originally tried implementing a new stack language in pure JavaScript, which w
 surprisingly easy to get started but surprisingly hard to do things like
 recursion well. So I decided to simply source-translate to an existing
 Forth implementation instead.
-
-## Show me another hackeneyed programming example.
-
-What new language would be complete without printing the first *n* Fibonacci
-numbers?
-
-> 😀🌿0 1💘0✋💑➕💞💕😘👌💔😉
-> 
-> 10🌿 
->
-> `>> 0 1 1 2 3 5 8 13 21 34`
-
 
 ## Complete glossary
 
