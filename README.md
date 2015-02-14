@@ -30,14 +30,10 @@ An Emoji-based stack language
 HeartForth is a dialect of
 [Forth](https://en.wikipedia.org/wiki/Forth_%28programming_language%29), a
 [stack-oriented](https://en.wikipedia.org/wiki/Stack-oriented_programming_language)
-language. 
-
-Where other programming languages use many data structures,
-Forth has a wealth of operators to manipulate the stack. Emoji also
-has a large number of symbols which incorporate hearts, so these
-are matched together. 
-
-So far I have implemented the basics:
+language. Where other programming languages use many data structures,
+Forth has a wealth of operators to manipulate the stack. Emoji 
+has a large number of symbols which incorporate hearts, which suggest holding
+something close, or remembering something. So....
 
 | HeartForth | Standard Forth | meaning |
 | --- | --- | --- |
