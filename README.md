@@ -72,6 +72,20 @@ surprisingly easy to get started but surprisingly hard to do things like
 recursion well. So I decided to simply source-translate to an existing
 Forth implementation instead.
 
+## Show me another hackeneyed programming example.
+
+What new language would be complete without printing the *n*th Fibonacci
+number?
+
+😀🌿0 1💘0✋💑➕💞👌💔😉
+
+6🌿 💥😘 
+`>> 8`
+7🌿 💥😘 
+`>> 13`
+8🌿 💥😘 
+`>> 21`
+
 ## Complete glossary
 
 | HeartForth | Standard Forth | meaning |
