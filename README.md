@@ -1,7 +1,42 @@
-emojistack
+HeartForth
 ==========
 
-Because EmojiLisp has too many moons.
+
++	➕
+
+-	➖
+
+*	✖
+
+/	➗
+
+=	🙏
+
+:	😀
+
+;	😉
+
+?do	😜
+
+loop	🌀
+
+begin	👉
+
+until	👍
+
+drop	💔
+
+rot	💘
+
+over	💑
+
+swap	💞
+
+dup	💕
+
+.	😘
+
+An Emoji dialect of Forth
 
 
 
