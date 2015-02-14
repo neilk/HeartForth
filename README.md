@@ -107,6 +107,10 @@ on Stack Exchange, which helped me get started.
 
 The [repl.it](https://github.com/replit) project and [ForthFreak](http://forthfreak.net/jsforth80x25.html) for bringing Forth to JavaScript.
 
+## Mirrored
+
+On my blog at [neilk.net](http://neilk.net/blog/2015/02/14/heartforth/).
+
 ## Dedication
 
 *For my lovely girlfriend Melanie. I heart you 100 factorial .*
