@@ -85,7 +85,7 @@ surprisingly easy to get started but surprisingly hard to do things like
 recursion well. So I decided to simply source-translate to an existing
 Forth implementation instead.
 
-## Complete glossary
+## Complete glossary (so far)
 
 | HeartForth | Standard Forth | meaning |
 | --- | --- | --- |
