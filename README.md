@@ -76,8 +76,8 @@ A long time ago I had used another stack-based language,
 [PostScript](https://en.wikipedia.org/wiki/PostScript). They have
 this curious property of being streams of keywords with some data
 mixed in. Just like a block of Emoji. Once I realized I could match
-hearts to stack operators I knew I was onto something. The "revolving hearts" 💞  
-symbol almost begs to be `swap`, and hearts have something to do with
+hearts to stack operators I knew I was onto something. The "revolving hearts" 💞  symbol 
+almost begs to be `swap`, and hearts have something to do with
 holding something close or remembering it. 
 
 I originally tried implementing a new stack language in pure JavaScript, which was
