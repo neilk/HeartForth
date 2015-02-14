@@ -11,8 +11,15 @@ Aadit M. Shah posted this answer on Stack Exchange, which helped me get started.
 
 https://stackoverflow.com/questions/13466600/how-would-i-go-about-implementing-a-simple-stack-based-programming-language
 
-| HeartForth   | Standard forth operator | meaning |
-=======================================
+| HeartForth | Standard Forth | meaning |
+| --- | --- | --- |
+| 💕   | dup | ( a -> a a ) |
+| 💔   | drop | ( a -> ) |
+| 💑   | over | ( a b -> a b a ) |
+| 💘   | rot | ( a b c -> b c a ) |
+| 💞   | swap | ( a b -> b a ) |
+| 😘   | . | *show last item on stack* |
+| ❤   | dump | *show entire stack* |
 | ➕   | + | *add* |
 | ➖   | - | *subtract* |
 | ✖   | * | *multiply* |
@@ -28,10 +35,5 @@ https://stackoverflow.com/questions/13466600/how-would-i-go-about-implementing-a
 | 👍   | until | *end loop condition *|
 | 👐   | if | *if* |
 | 👏   | then | *then* |
-| 💕   | dup | ( a -> a a ) |
-| 💔   | drop | ( a -> ) |
-| 💑   | over | ( a b -> a b a ) |
-| 💘   | rot | ( a b c -> b c a ) |
-| 💞   | swap | ( a b -> b a ) |
-| 😘   | . | *show last item on stack* |
-| ❤   | dump | *show entire stack* |
+
+
