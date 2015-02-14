@@ -67,9 +67,10 @@ A long time ago I had used another stack-based language,
 this curious property of being streams of keywords with some data
 mixed in. Just like a block of Emoji. Once I realized I could match
 hearts to stack operators I knew I was onto something. I originally
-tried implementing a new stack language in pure JavaScript, but
-recursion was hard, so I decided to base it on a Forth implementation
-instead.
+tried implementing a new stack language in pure JavaScript, which was
+surprisingly easy to get started but surprisingly hard to do things like
+recursion well. So I decided to simply source-translate to an existing
+Forth implementation instead.
 
 ## Complete glossary
 
