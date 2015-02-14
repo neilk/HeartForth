@@ -40,7 +40,7 @@ rl.on('line', function(line) {
   console.log('>> ' + symbols.join(' ').replace(/\s+/g, ' '));
   var forthLines = e2f.emojiToForth(line);
   forthLines.forEach(function(line) {
-    console.log('forth>> ' + line);
+    // console.log('forth>> ' + line);
     forth.run(line);
   });
   //var stack = forth.stacktop(10);
