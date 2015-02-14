@@ -77,14 +77,20 @@ Forth implementation instead.
 What new language would be complete without printing the *n*th Fibonacci
 number?
 
-😀🌿0 1💘0✋💑➕💞👌💔😉
+> 😀🌿0 1💘0✋💑➕💞👌💔😉
+> 
+> 6🌿 😘 
+> 
+> `>> 8`
+> 
+> 7🌿 😘 
+> 
+> `>> 13`
+> 
+> 8🌿 😘 
+> 
+> `>> 21`
 
-6🌿 💥😘 
-`>> 8`
-7🌿 💥😘 
-`>> 13`
-8🌿 💥😘 
-`>> 21`
 
 ## Complete glossary
 
