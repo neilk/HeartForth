@@ -1,7 +1,7 @@
 💕  💘  HeartForth ❤ 💞  
 ======================
 
-An Emoji-based stack language
+An Emoji stack language
 
 ## Synopsis
 
