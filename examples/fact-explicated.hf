@@ -1,0 +1,27 @@
+😀 💥         # define factorial:
+            #   to explicate, let's imagine the number 5 is already on the stack.
+            # 
+            #   This zero helps us know when to stop multiplying, later
+  0 💞       #   (5) -> (5 0) -> (0 5) 
+            #
+            #   first, push all numbers from 1-5 onto the stack
+            #
+  👉         #   while
+    💕       #     duplicate last (0 5 5)
+    1➖      #     subtract one from last (0 5 4)
+  💕 1 🙏 👍   #     exit if last number = 1. otherwise, continue 
+            #   looping...
+            #  
+            #   eventually we have (0 5 4 3 2 1)
+            #
+            #   now, multiply them all together
+            #
+  👉         #   while
+    ✖       #     multiply last two, 2*1 (0 5 4 3 2)
+  💑  0 🙏 👍  #     exit if 2nd to last number is 0. otherwise, continue
+            #   looping...
+            #   
+            #   eventually we have (0 120)
+            #
+  💞 💔       #   swap -> (120 0), drop (120)
+😉           # end
