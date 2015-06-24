@@ -60,7 +60,8 @@ has a large number of symbols which incorporate hearts. So....
 
 ## Disadvantages
 
-* None.
+* Impossible to type on a legitimate keyboard.
+* Code looks like texting between teenage girls.
 
 ## Motivation
 
