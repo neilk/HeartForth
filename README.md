@@ -1,4 +1,4 @@
-💕  💘  HeartForth ❤ 💞  
+💕  💘  <span style="font-size: x-large; font-weight: bold;">HeartForth</span> ❤ 💞  
 
 An Emoji stack language
 
